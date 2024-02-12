@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "COFFEE_FOR_ME.css">
+	<title>COFFEE FOR ME - Product</title>
+</head>
+<body>
+	<div id = "mainPage">
+		<div id = "topContainer">
+			<!--logo container-->
+			<div id = "logo">
+ 				<img src="logop.png" alt = "logo" width="120">
+			</div>
+
+			<!--name container-->
+			<div id = "name">
+				<h1>COFFEE FOR ME</h1>
+			</div>
+		</div>
+
+		<!--tool bar container-->
+		<div id = "toolBar">
+			<a href="..Homepage_link" img src="cart.png" width="30">Our Menu</a>
+			<a href="..Product_link">Our Product</a>
+			<a href="..Location_link">Our Location</a>
+			<!--shopping cart container-->
+			<div id = "cart">
+				<!--image button for cart-->
+				<a href="..cart_link">
+					<img src="cart.png" alt = "cart" width="40" length="40"/>
+				</a>
+			</div>
+		</div>
+
+		<!--search bar container-->
+		<div id = "searchBar">
+		</div>
+
+		<div id = "productSide">
+			<!--product image container-->
+			<div id = "coffeebeanbagImage">
+				<img src="coffeebeanbag.png" alt = "Coffee Bean Bag" width = "150">
+			</div>
+
+			<!--description containers-->
+			<div id = "descriptions_top">
+				<h3 id = "desciption_heading">Description:</h3>
+				<p>Embark on a sensory journey with our Ethiopian Yirgacheffe coffee beans, hailing from the verdant highlands of Ethiopia, the birthplace of coffee. This single-origin gem is a testament to the rich and diverse terroir of the region. &#128526;
+					</p>
+					<p>A burst of floral notes reminiscent of jasmine and bergamot dance on your palate, creating a delightful symphony of aromas. The initial sip reveals a bright acidity, akin to a citrusy zest, balanced by the subtle sweetness of ripe peach and a hint of honey!;
+					</p>
+
+			<div id = "description_bottom">
+				<ul>
+					<li>Origin: Africa</li>
+					<li>Weights: 1 kg</li>
+					<li>Serving Size: 1 tablespoon</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+
+		<!--option side-->
+		<div id = "optionSide">
+			<!--choices-->
+			<div id = "size">
+				<p>Please choose a size in your interest:</p>
+				<button class = "button size1btn" onclick="myFunction()">1 LB</button>
+				<button class = "button size2btn" onclick="myFunction()">1.5 LB</button>
+				<button class = "button size3btn" onclick="myFunction()">2 LB</button>
+				<p id = "demo"></p>
+			</div>
+			<div id = "roast">
+				<p>Please choose a type of roast in your interest:</p>
+				<button class = "button lightbtn" onclick="myFunction1()">Light Roast</button>
+				<button class = "button mediumbtn" onclick="myFunction1()">Medium Roast</button>
+				<button class = "button darkbtn" onclick="myFunction1()">Dark Roast</button>
+				<p id = "demo1"></p>
+			</div>
+			<div>
+				<p>Please choose how you want the beans to be:</p>
+				<button class = "button grounded" onclick="myFunction2()">Grounded</button>
+				<button class = "button whole" onclick="myFunction2()">Whole Bean</button>
+				<p id = "demo2"></p>
+			</div>
+
+			&nbsp; 
+			<!--options for checking out-->
+			<div id = "quantity_price">
+				<form name = "myQuantity" action = "...link" onsubmit="return quantityCheck()" method="post">
+  					<label for = "quantity">Quantity:</label><br/>
+					<input type = "text" id = "quantity" name = "quantity"><br/><br/>
+					<input type = "submit" value = "Submit">
+				</form>
+			</div>
+			<div id = "addcart">
+				<p><button>Add to Cart</button></p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	// variable buttons
+	function myFunction() {
+  		document.getElementById("demo").innerHTML = "Updated!";
+	}
+	function myFunction1() {
+  		document.getElementById("demo1").innerHTML = "Updated!";
+	}
+	function myFunction2() {
+  		document.getElementById("demo2").innerHTML = "Updated!";
+	}
+	// function quantityCheck(){
+	// 	var x = document.forms["myQuantity"]["quantity"].value;
+	// 	var check = /[0-9]/;
+	// 	if(!check.test(x)){
+	// 		alert("You did not enter a number, please enter a number~");
+	// 		return false;
+	// 	} else (x == ""){
+	// 		alert("Nothing is entered, please try again~");
+	// 		return false;
+	// 	}
+	// 	return false;
+	// }
+	</script>
+</body>
+</html>
