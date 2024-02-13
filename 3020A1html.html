@@ -32,11 +32,25 @@
 					<img src="cart.png" alt = "cart" width="40" length="40"/>
 				</a>
 			</div>
+
+			<!--search bar container-->
+			<div id = "searchBar">
+				<form name = "searchBar" action = "...link">
+					<span>
+						<input type = "text" id = "searchBar" name = "searchBar"><br/>
+					</span>
+					<span><button type="button" id="searchbtn">Search</button>
+						<a href="..search_link">
+						</a>
+					</span>
+					
+					<br/>
+				</form>
+			</div>
+
 		</div>
 
-		<!--search bar container-->
-		<div id = "searchBar">
-		</div>
+	
 
 		<div id = "productSide">
 			<!--product image container-->
@@ -86,20 +100,42 @@
 				<p id = "demo2"></p>
 			</div>
 
-			&nbsp; 
-			<!--options for checking out-->
-			<div id = "quantity_price">
-				<form name = "myQuantity" action = "...link" onsubmit="return quantityCheck()" method="post">
-  					<label for = "quantity">Quantity:</label><br/>
-					<input type = "text" id = "quantity" name = "quantity"><br/><br/>
-					<input type = "submit" value = "Submit">
-				</form>
-			</div>
+			<!--quantity, price and options for checking out-->
+			<span><label for = "quantity ">Quantity:</label><br/></span>
+			<input type = "number" id = "quantity" name = "quantity " oninput="modPrice()" min=1><br/><br/>
+			<span><p>$</p> </span>
+			<span>
+				<div id = "price">30</div><br/>
+			</span> 
 			<div id = "addcart">
-				<p><button>Add to Cart</button></p>
+				<button id = "additem" data-name = "coffee" data-price="30" onclick="addItem()"><i class="fas fa-shoppingCart">Add to Cart</i></button>
 			</div>
 		</div>
 	</div>
+
+
+<div id="suggestProduct">
+			<span>
+				
+				<div id="sugpudc1">
+						
+					<a href="..Product_link"> <img src="typica.jpg"  style="width:300px;height:160px";> </a>
+					<br/>
+					<a href="..Product_link"> typica </a>
+
+				</div>
+				
+				<div id="sugpudc2">	
+					<a href="..Product_link">  <img src="typica (2).jpg"  style="width:300px;height:160px";> </a>
+					<br/>
+					<a href="..Product_link"> typica </a>
+				</div>
+				
+			</span>
+		</div>
+
+
+
 
 	<script>
 	// variable buttons
@@ -127,3 +163,196 @@
 	</script>
 </body>
 </html>
+
+
+body {
+	width: 80%;
+	margin: auto;
+	background-color: whitesmoke;
+}
+/*--------------------------------
+*/
+#topContainer{
+	padding: 25px;
+	background-color:lightskyblue;
+	border:2px solid darkred;
+}
+
+#logo{
+	text-align: center;
+	margin: auto;
+	float: left;
+	display: inline-block;
+/*	border:2px solid darkred;
+*/}
+
+#name{
+	font-family:Luminari;
+	font-size: 30px;
+	text-align:center;
+	width: 84%;
+	float: center;
+	display: inline-block;
+/*	border:2px solid darkred;
+*/}
+
+/*#cart{
+	float: right;
+	display: inline-block;
+}*/
+
+/*--------------------------------
+*/
+#toolBar{
+	margin-left: auto;
+	padding: 15px;
+	text-align: left;
+}
+
+#cart{
+	float: right;
+}
+.cartbtn{
+	background-color: whitesmoke;
+	border:none;
+	cursor:pointer;
+}
+
+#searchBar{
+	float: right;
+}
+
+span{
+	display: inline-block;
+}
+
+
+/*--------------------------------
+*/
+#productSide{
+	float: left;
+	width: 60%;
+	border-right: 2px solid black;
+}
+
+#coffeebeanbagImage{
+	text-align: center;
+	padding: 30px;
+}
+
+#desciption_heading{
+	text-align: left;
+}
+
+#descriptions_top{
+	padding: 20px;
+	text-align: center;
+}
+
+#description_bottom{
+	text-align: left;
+}
+/*--------------------------------
+*/
+#optionSide{
+	float: right;
+	width: 35%;
+	height: 80%;
+	border:2px solid black;
+}
+
+/*-------Choice bar-------------
+*/
+/*#size{
+	border:2px solid black;
+}*/
+.button{
+	border:none;
+	color:white;
+	padding:10px 10px;
+	text-align: center;
+	display:inline-block;
+	font-size: 15px;
+	cursor: pointer;
+}
+.button:hover{
+	opacity: 0.7;
+}
+.size1btn,.size2btn,.size3btn{
+	margin-left: 30px;
+	background-color: lightskyblue;
+}
+.size1btn:focus{
+	background-color: darkblue;
+}
+
+.lightbtn,.mediumbtn,.darkbtn{
+	margin-left: 15px;
+	background-color: lightpink;
+}
+.grounded,.whole{
+	margin-left: 30px;
+	background-color: lightgreen;
+}
+/*--------------------------------
+*/
+#quantity_price{
+	width: 100%;
+	border:2px solid black;
+}
+#quantity{
+	width: 20%;
+	float: center;
+	text-align: center;
+	display: inline-block;
+}
+#price{
+	width: 20%;
+	float: center;
+	text-align: center;
+	display: inline-block;
+}
+/*--------------------------------
+*/
+#price{
+text-align: right;
+}
+
+#addcart button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+#addcart button:hover {
+  opacity: 0.7;
+}
+#addcart{
+	padding:15px;
+	float: right;
+}
+
+
+#suggestProduct{
+	width: 100%;
+	float: left;
+	padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sugpudc1{
+	padding: 40px;
+	float: left;
+}
+
+#sugpudc2{
+	padding: 40px;
+	float: right;
+}
+
+
