@@ -148,18 +148,13 @@
 	function myFunction2() {
   		document.getElementById("demo2").innerHTML = "Updated!";
 	}
-	// function quantityCheck(){
-	// 	var x = document.forms["myQuantity"]["quantity"].value;
-	// 	var check = /[0-9]/;
-	// 	if(!check.test(x)){
-	// 		alert("You did not enter a number, please enter a number~");
-	// 		return false;
-	// 	} else (x == ""){
-	// 		alert("Nothing is entered, please try again~");
-	// 		return false;
-	// 	}
-	// 	return false;
-	// }
+	function modPrice(){
+	var price = 30;
+	var quantity = document.getElementById("quantity").value;
+	var total = parseInt(price)*quantity;
+	// console.log(total);
+	document.getElementById("price").innerHTML = total;
+	}
 	</script>
 </body>
 </html>
