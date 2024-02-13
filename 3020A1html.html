@@ -43,14 +43,10 @@
 						<a href="..search_link">
 						</a>
 					</span>
-					
 					<br/>
 				</form>
 			</div>
-
 		</div>
-
-	
 
 		<div id = "productSide">
 			<!--product image container-->
@@ -101,9 +97,7 @@
 			</div>
 
 			<!--quantity, price and options for checking out-->
-			<span><label for = "quantity ">Quantity:</label><br/></span>
-			<input type = "number" id = "quantity" name = "quantity " oninput="modPrice()" min=1><br/><br/>
-			<span><p>$</p> </span>
+			<span><p>Price: $</p> </span>
 			<span>
 				<div id = "price">30</div><br/>
 			</span> 
@@ -112,50 +106,20 @@
 			</div>
 		</div>
 	</div>
-
-
-<div id="suggestProduct">
-			<span>
-				
-				<div id="sugpudc1">
-						
-					<a href="..Product_link"> <img src="typica.jpg"  style="width:300px;height:160px";> </a>
-					<br/>
-					<a href="..Product_link"> Typica </a>
-
-				</div>
-				
-				<div id="sugpudc2">	
-					<a href="..Product_link">  <img src="Burbon.jpg"  style="width:300px;height:160px";> </a>
-					<br/>
-					<a href="..Product_link"> Burbon </a>
-				</div>
-				
-			</span>
-		</div>
-
-
-
-
-	<script>
-	// variable buttons
-	function myFunction() {
-  		document.getElementById("demo").innerHTML = "Updated!";
-	}
-	function myFunction1() {
-  		document.getElementById("demo1").innerHTML = "Updated!";
-	}
-	function myFunction2() {
-  		document.getElementById("demo2").innerHTML = "Updated!";
-	}
-	function modPrice(){
-	var price = 30;
-	var quantity = document.getElementById("quantity").value;
-	var total = parseInt(price)*quantity;
-	// console.log(total);
-	document.getElementById("price").innerHTML = total;
-	}
-	</script>
+	<div id="suggestProduct">
+		<span>
+			<div id="sugpudc1">
+				<a href="..Product_link"> <img src="typica.jpg"  style="width:300px;height:160px";> </a>
+				<br/>
+				<a href="..Product_link"> Typica </a>
+			</div>
+			<div id="sugpudc2">	
+				<a href="..Product_link">  <img src="Burbon.jpg"  style="width:300px;height:160px";> </a>
+				<br/>
+				<a href="..Product_link"> Burbon </a>
+			</div>
+		</span>
+	</div>
 </body>
 </html>
 
