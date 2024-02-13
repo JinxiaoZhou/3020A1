@@ -51,6 +51,15 @@ body {
 	cursor:pointer;
 }
 
+#searchBar{
+	float: right;
+}
+
+span{
+	display: inline-block;
+}
+
+
 /*--------------------------------
 */
 #productSide{
@@ -138,6 +147,10 @@ body {
 }
 /*--------------------------------
 */
+#price{
+text-align: right;
+}
+
 #addcart button {
   border: none;
   outline: 0;
@@ -156,3 +169,23 @@ body {
 	padding:15px;
 	float: right;
 }
+
+
+#suggestProduct{
+	width: 100%;
+	float: left;
+	padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#sugpudc1{
+	padding: 40px;
+	float: left;
+}
+
+#sugpudc2{
+	padding: 40px;
+	float: right;
+}
+
+

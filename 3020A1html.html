@@ -32,11 +32,25 @@
 					<img src="cart.png" alt = "cart" width="40" length="40"/>
 				</a>
 			</div>
+
+			<!--search bar container-->
+			<div id = "searchBar">
+				<form name = "searchBar" action = "...link">
+					<span>
+						<input type = "text" id = "searchBar" name = "searchBar"><br/>
+					</span>
+					<span><button type="button" id="searchbtn">Search</button>
+						<a href="..search_link">
+						</a>
+					</span>
+					
+					<br/>
+				</form>
+			</div>
+
 		</div>
 
-		<!--search bar container-->
-		<div id = "searchBar">
-		</div>
+	
 
 		<div id = "productSide">
 			<!--product image container-->
@@ -86,20 +100,42 @@
 				<p id = "demo2"></p>
 			</div>
 
-			&nbsp; 
-			<!--options for checking out-->
-			<div id = "quantity_price">
-				<form name = "myQuantity" action = "...link" onsubmit="return quantityCheck()" method="post">
-  					<label for = "quantity">Quantity:</label><br/>
-					<input type = "text" id = "quantity" name = "quantity"><br/><br/>
-					<input type = "submit" value = "Submit">
-				</form>
-			</div>
+			<!--quantity, price and options for checking out-->
+			<span><label for = "quantity ">Quantity:</label><br/></span>
+			<input type = "number" id = "quantity" name = "quantity " oninput="modPrice()" min=1><br/><br/>
+			<span><p>$</p> </span>
+			<span>
+				<div id = "price">30</div><br/>
+			</span> 
 			<div id = "addcart">
-				<p><button>Add to Cart</button></p>
+				<button id = "additem" data-name = "coffee" data-price="30" onclick="addItem()"><i class="fas fa-shoppingCart">Add to Cart</i></button>
 			</div>
 		</div>
 	</div>
+
+
+<div id="suggestProduct">
+			<span>
+				
+				<div id="sugpudc1">
+						
+					<a href="..Product_link"> <img src="typica.jpg"  style="width:300px;height:160px";> </a>
+					<br/>
+					<a href="..Product_link"> typica </a>
+
+				</div>
+				
+				<div id="sugpudc2">	
+					<a href="..Product_link">  <img src="typica (2).jpg"  style="width:300px;height:160px";> </a>
+					<br/>
+					<a href="..Product_link"> typica </a>
+				</div>
+				
+			</span>
+		</div>
+
+
+
 
 	<script>
 	// variable buttons
@@ -127,3 +163,4 @@
 	</script>
 </body>
 </html>
+
