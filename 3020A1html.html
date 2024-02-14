@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel = "stylesheet" href = "COFFEE_FOR_ME.css">
+	<link href="https://fonts.cdnfonts.com/css/old-english-five" rel="stylesheet">
 	<title>COFFEE FOR ME - Product</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
 		<div id = "topContainer">
 			<!--logo container-->
 			<div id = "logo">
- 				<img src="logop.png" alt = "logo" width="120">
+ 				<img src="coffeelogo.jpg" alt = "logo" width="120">
 			</div>
 
 			<!--name container-->
@@ -39,13 +40,15 @@
 					<span>
 						<input type = "text" id = "searchBar" name = "searchBar"><br/>
 					</span>
-					<span><button type="button" id="searchbtn">Search</button>
-						<a href="..search_link">
-						</a>
+					<span>
+						<button type="button" id="searchbtn">Search</button>
+						<a href="..search_link"></a>
 					</span>
+					
 					<br/>
 				</form>
 			</div>
+
 		</div>
 
 		<div id = "productSide">
@@ -58,9 +61,9 @@
 			<div id = "descriptions_top">
 				<h3 id = "desciption_heading">Description:</h3>
 				<p>Embark on a sensory journey with our Ethiopian Yirgacheffe coffee beans, hailing from the verdant highlands of Ethiopia, the birthplace of coffee. This single-origin gem is a testament to the rich and diverse terroir of the region. &#128526;
-					</p>
-					<p>A burst of floral notes reminiscent of jasmine and bergamot dance on your palate, creating a delightful symphony of aromas. The initial sip reveals a bright acidity, akin to a citrusy zest, balanced by the subtle sweetness of ripe peach and a hint of honey!
-					</p>
+				</p>
+				<p>A burst of floral notes reminiscent of jasmine and bergamot dance on your palate, creating a delightful symphony of aromas. The initial sip reveals a bright acidity, akin to a citrusy zest, balanced by the subtle sweetness of ripe peach and a hint of honey!
+				</p>
 
 			<div id = "description_bottom">
 				<ul>
@@ -75,27 +78,37 @@
 		<!--option side-->
 		<div id = "optionSide">
 			<!--choices-->
+			<br/><br/>
 			<div id = "size">
-				<p>Please choose a size in your interest:</p>
-				<button class = "button size1btn" onclick="myFunction()">1 LB</button>
-				<button class = "button size2btn" onclick="myFunction()">1.5 LB</button>
-				<button class = "button size3btn" onclick="myFunction()">2 LB</button>
-				<p id = "demo"></p>
+				<label for = "sizeDrop">Choose a size for the coffee:</label>
+				<select name = "sizeDown" id = "size_content">
+					<option value = "default">Default</option>
+					<option value = "small">Small</option>
+					<option value = "medium">Medium</option>
+					<option value = "large">Large</option>
+				</select>
 			</div>
+			<br/>
 			<div id = "roast">
-				<p>Please choose a type of roast in your interest:</p>
-				<button class = "button lightbtn" onclick="myFunction1()">Light Roast</button>
-				<button class = "button mediumbtn" onclick="myFunction1()">Medium Roast</button>
-				<button class = "button darkbtn" onclick="myFunction1()">Dark Roast</button>
-				<p id = "demo1"></p>
+				<label for = "roastDrop">Choose a roast type for the coffee:</label>
+				<select name = "sizeDown" id = "roast_content">
+					<option value = "default">Default</option>
+					<option value = "light">Light</option>
+					<option value = "medium">Medium</option>
+					<option value = "dark">Dark</option>
+				</select>
 			</div>
-			<div>
-				<p>Please choose how you want the beans to be:</p>
-				<button class = "button grounded" onclick="myFunction2()">Grounded</button>
-				<button class = "button whole" onclick="myFunction2()">Whole Bean</button>
-				<p id = "demo2"></p>
+			<br/>
+			<div id = "type">
+				<label for = "typeDrop">Choose a type for the coffee:</label>
+				<select name = "typeDown" id = "type_content">
+					<option value = "default">Default</option>
+					<option value = "grounded">Grounded</option>
+					<option value = "whole">Whole-Beans</option>
+				</select>
 			</div>
-
+			<br/>
+			<br/><br/>
 			<!--quantity, price and options for checking out-->
 			<span><label for = "quantity ">Quantity:</label><br/></span>
 			<input type = "number" id = "quantity" name = "quantity " oninput="modPrice()" min=1>
@@ -113,15 +126,16 @@
 			<div id="sugpudc1">
 				<a href="..Product_link"> <img src="typica.jpg"  style="width:300px;height:160px";> </a>
 				<br/>
-				<a href="..Product_link"> Typica </a>
-			</div>
+				<a href="..Product_link"> typica </a>
+			</div>				
 			<div id="sugpudc2">	
-				<a href="..Product_link">  <img src="Burbon.jpg"  style="width:300px;height:160px";> </a>
+				<a href="..Product_link">  <img src="typica (2).jpg"  style="width:300px;height:160px";> </a>
 				<br/>
-				<a href="..Product_link"> Burbon </a>
-			</div>
+				<a href="..Product_link"> typica </a>
+			</div>	
 		</span>
 	</div>
+
+	<script src="COFFEE_FOR_ME.js"></script>
 </body>
 </html>
-
