@@ -1,38 +1,41 @@
 body {
 	width: 80%;
 	margin: auto;
-	background-color: whitesmoke;
+/*	background-color: whitesmoke;*/
+	background-image: url("");
+	background-size: 100%;
+
 }
-/*--------------------------------
+/*---------Top container------------
 */
 #topContainer{
-	padding: 25px;
-	background-color:lightskyblue;
-	border:2px solid darkred;
+	background-image: url("cutecoffee1.jpg");
+	background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;	
+  height: 300px;
 }
 
 #logo{
 	text-align: center;
+	padding: 30px;
 	margin: auto;
 	float: left;
 	display: inline-block;
-/*	border:2px solid darkred;
-*/}
+}
 
 #name{
-	font-family:Luminari;
+ 	font-family: 'Old English Five', sans-serif;
 	font-size: 30px;
 	text-align:center;
 	width: 84%;
 	float: center;
 	display: inline-block;
-/*	border:2px solid darkred;
-*/}
-
-/*#cart{
+}
+#cart{
 	float: right;
 	display: inline-block;
-}*/
+}
 
 /*--------------------------------
 */
@@ -60,7 +63,7 @@ span{
 }
 
 
-/*--------------------------------
+/*---------Product side (left)--------------
 */
 #productSide{
 	float: left;
@@ -89,40 +92,18 @@ span{
 */
 #optionSide{
 	float: right;
-	width: 35%;
+	width: 33%;
 	height: 80%;
+/*	border:2px solid black;*/
 }
+
 /*-------Choice bar-------------
 */
-.button{
-	border:none;
-	color:white;
-	padding:10px 10px;
-	text-align: center;
-	display:inline-block;
-	font-size: 15px;
-	cursor: pointer;
-}
-.button:hover{
-	opacity: 0.7;
-}
-.size1btn,.size2btn,.size3btn{
-	margin-left: 30px;
-	background-color: black;
-}
-.lightbtn,.mediumbtn,.darkbtn{
-	margin-left: 15px;
-	background-color: black;
-}
-.grounded,.whole{
-	margin-left: 30px;
-	background-color: black;
-}
-/*--------quantity input and price calculation container----------
-*/
-#quantity_price{
+
+/* quantity and price containers */
+#quantities{
 	width: 100%;
-	border:2px solid black;
+/*	border:2px solid black;*/
 }
 #quantity{
 	width: 20%;
@@ -134,8 +115,8 @@ span{
 	float: left;
 	display: inline-block;
 }
-/*--------Add to cart container--------
-*/
+
+/* adding product to the cart */
 #addcart button {
   border: none;
   outline: 0;
@@ -154,7 +135,7 @@ span{
 	padding:15px;
 	float: right;
 }
-/* suggested product container */
+/* suggested product */
 #suggestProduct{
 	width: 100%;
 	float: left;
@@ -171,5 +152,4 @@ span{
 	padding: 40px;
 	float: right;
 }
-
 
