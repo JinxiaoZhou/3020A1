@@ -151,10 +151,9 @@ div.pictures img{
 	float: right;
 }
 
-div.pictures:hover{
+div.pictures img:hover{
 	background-color: #faebd7;
 }
-
 div.sugname {
   font-size: 20px;
   padding: 10px;
