@@ -150,9 +150,11 @@ div.pictures img{
 	padding: 40px;
 	float: right;
 }
-
 div.pictures img:hover{
 	background-color: #faebd7;
+}
+div.pictures a{
+	color: black;
 }
 div.sugname {
   font-size: 20px;
