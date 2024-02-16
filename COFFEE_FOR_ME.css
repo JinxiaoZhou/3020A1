@@ -143,13 +143,22 @@ span{
   padding-bottom: 50px;
 }
 
-#sugpudc1{
-	padding: 40px;
-	float: left;
-}
-
-#sugpudc2{
+div.pictures img{
 	padding: 40px;
 	float: right;
 }
+
+div.pictures:hover{
+	border: 1px solid #777;
+}
+
+div.sugname {
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+ }
+
+div.sugdescribe {
+  text-align: center;
+ }
 
