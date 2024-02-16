@@ -149,7 +149,7 @@ div.pictures img{
 }
 
 div.pictures:hover{
-	border: 1px solid #777;
+	background-color: lightcyan;
 }
 
 div.sugname {
