@@ -1,35 +1,32 @@
 body {
-	width: 80%;
+	width: 100%;
 	margin: auto;
-/*	background-color: whitesmoke;*/
-	background-image: url("");
-	background-size: 100%;
-
+	background-color: #fff8e7;
 }
 /*---------Top container------------
 */
 #topContainer{
 	background-image: url("cutecoffee1.jpg");
 	background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;	
   height: 300px;
+  width: 100%;
 }
 
 #logo{
+	margin: 0;
+	position: absolute;
+	left: 50%;
 	text-align: center;
-	padding: 30px;
-	margin: auto;
-	float: left;
-	display: inline-block;
 }
 
 #name{
  	font-family: 'Old English Five', sans-serif;
+ 	color: white;
 	font-size: 30px;
 	text-align:center;
-	width: 84%;
-	float: center;
+	width: 100%;
+	float: right;
 	display: inline-block;
 }
 #cart{
@@ -40,9 +37,22 @@ body {
 /*--------------------------------
 */
 #toolBar{
-	margin-left: auto;
-	padding: 15px;
-	text-align: left;
+	overflow: hidden;
+	position: fixed;
+	margin: auto;
+	top: 0;
+	width: 100%;
+	background-color: #fff8e7;
+	padding-bottom: 100px;
+}
+#toolBar a{
+	font-size: 17px;
+	color: black;
+	padding: 5px;
+}
+
+#searchBar{
+	float: right;
 }
 
 #cart{
@@ -53,22 +63,17 @@ body {
 	border:none;
 	cursor:pointer;
 }
-
-#searchBar{
-	float: right;
-}
-
 span{
 	display: inline-block;
 }
-
 
 /*---------Product side (left)--------------
 */
 #productSide{
 	float: left;
-	width: 60%;
+	width: 50%;
 	border-right: 2px solid black;
+	margin-left: 10%;
 }
 
 #coffeebeanbagImage{
@@ -92,9 +97,8 @@ span{
 */
 #optionSide{
 	float: right;
-	width: 33%;
-	height: 80%;
-/*	border:2px solid black;*/
+	margin-right: 15%;
+	width: 20%;
 }
 
 /*-------Choice bar-------------
@@ -103,7 +107,6 @@ span{
 /* quantity and price containers */
 #quantities{
 	width: 100%;
-/*	border:2px solid black;*/
 }
 #quantity{
 	width: 20%;
